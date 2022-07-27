@@ -1,4 +1,4 @@
-import "../stylesheets/header-leftMenu";
+import "../stylesheets/header-leftMenu.css";
 
 function HeaderLeftMenu() {
   return (

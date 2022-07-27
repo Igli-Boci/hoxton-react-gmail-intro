@@ -1,6 +1,7 @@
 import "./App.css";
 
 import Header from "./appComponents/header";
+import LeftMenu from "./appComponents/leftMenu";
 
 import flaticonWelcomeImage from "./assets/images/flaticon-welcome-image.png";
 import backArrow from "./assets/icons/back-arrow.png";
@@ -12,23 +13,7 @@ function App(): JSX.Element {
   return (
     <div className="app">
        <Header />
-      <nav className="left-menu">
-        <ul className="inbox-list">
-          <li className="item active">
-            <span className="label">Inbox</span>
-            <span className="count">3</span>
-          </li>
-          <li className="item">
-            <span className="label">Starred</span>
-            <span className="count">2</span>
-          </li>
-
-          <li className="item toggle">
-            <label htmlFor="hide-read">Hide read</label>
-            <input id="hide-read" type="checkbox" checked={false} />
-          </li>
-        </ul>
-      </nav>
+       <LeftMenu />
       <main className="email-view">
         <nav className="email-toolbar">
           <ul>
